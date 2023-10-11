@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caclulator</title>
+    <meta name="author" content="Bongani Melembe">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-3">
+    <div class="row my-3">
+        <div class="calculator col-md-12 text-center">
+            <h2 class="text-center title">My Calculator app</h2>
+            <div class="top-box">
+                <input type="text" id="inputExpression" placeholder="Enter a number" onkeydown="handleEnter(event)">
+                    <div class="buttons">
+                            <button onclick="addToExpression('+')">+</button>
+                            <button onclick="addToExpression('-')">-</button>
+                            <button onclick="addToExpression('*')">*</button>
+                            <button onclick="addToExpression('/')">/</button>
+                        </div>
+                    </div>
+                    <div class="bottom-box">
+                        <div class="results">
+                            <span id="result">0</span><br/>
+                    </div>
+                </div>
+            </div>
+    </div></div>
+</body>
+<script src="script.js"></script>
+</html>
